@@ -1,0 +1,4 @@
+include_directories ("${PROJECT_SOURCE_DIR}/hoedown/src")
+include_directories ("${PROJECT_SOURCE_DIR}/src")
+ADD_EXECUTABLE(run_test src/test.cpp)
+TARGET_LINK_LIBRARIES(run_test ${CONAN_LIBS})
